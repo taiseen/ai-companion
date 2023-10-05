@@ -13,8 +13,8 @@ npm install @clerk/nextjs
 npx shadcn-ui@latest init
 npx shadcn-ui@latest add button
 npx shadcn-ui@latest add dropdown-menu
+npx shadcn-ui@latest add sheet
 npm install next-themes
-
 ```
 
 - Would you like to use TypeScript (recommended)? ... no / `yes`

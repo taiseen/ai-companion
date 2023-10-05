@@ -1,10 +1,11 @@
 "use client";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
-import { Menu, Sparkles } from "lucide-react";
 import { Poppins } from "next/font/google";
 import { UserButton } from "@clerk/nextjs";
+import { Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
+import MobileSideBar from "@/components/MobileSideBar";
 import Link from "next/link";
 
 const font = Poppins({
@@ -15,11 +16,11 @@ const font = Poppins({
 const NavBar = () => {
   return (
     <div
-      className="fixed w-full z-50 flex justify-between items-center py-2 px-4 
-    border-b border-primary/10 bg-secondary"
+      className="fixed w-full h-16 flex justify-between items-center 
+      py-2 px-4 border-b border-primary/10 bg-secondary z-50"
     >
       <div className="flex items-center">
-        <Menu className="block md:hidden" />
+        <MobileSideBar />
 
         <Link href="/">
           <h1
